@@ -34,6 +34,7 @@ window.maximize()
 })
 }
 
+// shows/hides the window
 const toggleWindow = () => {
   window.isVisible() ? window.hide() : showWindow(); 
 }
