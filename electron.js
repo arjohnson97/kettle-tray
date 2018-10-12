@@ -1,6 +1,6 @@
 
 // Modules to control application life and create native browser window
-const {app, BrowserWindow, ipcMain, Tray} = require('electron')
+const {app, BrowserWindow, Tray} = require('electron')
 
 
 let tray, window
