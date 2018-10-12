@@ -56,7 +56,7 @@ const showWindow = () => {
 
 function createTray () {
   tray = new Tray('message.png')
-  tray.on('click', function (event) {
+  tray.on('click', function () {
 toggleWindow()
   })
 }
