@@ -16,15 +16,15 @@ function createWindow () {
   window = new BrowserWindow({
     show: false,
     frame: false,
-    width: 400,
-    height: 600,
+    width: 900,
+    height: 420,
     fullscreenable: false,
     resizable: false
 })
 window.maximize()
 
   // and load the index.html of the app.
-  window.loadURL('http://localhost:3000')
+  window.loadURL('https://messages.android.com/')
 
   // Hide the window when it loses focus
   window.on('blur', () => {
@@ -56,7 +56,7 @@ const showWindow = () => {
 }
 
 function createTray () {
-  tray = new Tray('coffee.png')
+  tray = new Tray('message.png')
   tray.on('click', function (event) {
 toggleWindow()
   })
