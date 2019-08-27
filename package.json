@@ -2,18 +2,25 @@
   "name": "food-tray",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "electron": "^5.0.6",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-scripts": "1.1.5"
-  },
-  "main": "electron.js",
+  "description": "Serves all your texts via Google Messages straight to your desktop.",
+  "author": "Andrew Johnson",
+  "main": "./public/electron.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "electron": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron-builder": "^21.2.0",
+    "electron": "^5.0.6"
+  },
+  "build": {
+    "productName": "Food Tray",
+    "files": [
+      "**/public/*"
+    ],
+    "mac": {
+      "icon": "./messages_logo.png"
+    }
   }
 }
